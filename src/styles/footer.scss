@@ -1,0 +1,52 @@
+.footer-container {
+  height: max-content;
+  background-color: $altira-darkblue;
+
+  & .container {
+    padding: 30px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.footer-left {
+  color: $altira-white;
+
+  & p {
+    font-size: 0.8em;
+  }
+
+  & a {
+    text-decoration: none;
+    color: $altira-orange;
+
+    &:hover {
+      color: $altira-neonblue;
+    }
+  }
+}
+
+.footer-right {
+  width: 20vw;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+
+  &__mail,
+  &__phone {
+    display: flex;
+    justify-content: space-between;
+    margin: 3px 0;
+
+    & a:hover {
+      color: $altira-neonblue;
+    }
+  }
+
+  & a {
+    text-decoration: none;
+    color: $altira-white;
+    margin-left: 10px;
+  }
+}

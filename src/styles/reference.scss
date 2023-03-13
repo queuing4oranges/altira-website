@@ -1,0 +1,48 @@
+.reference-cards {
+  display: flex;
+  justify-content: space-between;
+}
+
+.ref-card {
+  transition: 0.3s;
+}
+
+.reference-cards:hover > :not(:hover) {
+  opacity: 0.4;
+  background-color: $altira-color;
+  color: $altira-darkblue;
+}
+
+.ref-card {
+  width: 200px;
+  height: 250px;
+  margin: auto;
+  padding: 30px;
+  border: 3px solid $altira-orange;
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px 0px rgba(250, 137, 0, 0.75);
+  -webkit-box-shadow: 5px 5px 10px 0px rgba(250, 137, 0, 0.75);
+  -moz-box-shadow: 5px 5px 10px 0px rgba(250, 137, 0, 0.75);
+
+  &__text {
+    width: 80%;
+    margin: auto;
+    font-weight: 500;
+    font-size: 0.75em;
+    line-height: 1.3em;
+    color: $altira-color;
+    display: block;
+  }
+
+  &__image {
+    width: 80%;
+    height: 50%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5%;
+    background-color: white;
+    border-radius: 10px;
+  }
+}

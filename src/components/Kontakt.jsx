@@ -1,0 +1,97 @@
+import React, { useRef } from 'react'
+import emailjs from '@emailjs/browser'
+import Envelope from '../icons/Envelope'
+import Phone from '../icons/Phone'
+import swal from 'sweetalert';
+import GoogleMap from '../icons/GoogleMap';
+
+export default function Kontakt() {
+    const form = useRef();
+    const serviceId = import.meta.env.VITE_SERVICE_ID;
+    const templateId = import.meta.env.VITE_TEMPLATE_ID;
+    const publicKey = import.meta.env.VITE_PUBLIC_KEY;
+
+    const sendContactForm= (e) => {
+        e.preventDefault();
+        
+        emailjs.sendForm (
+            serviceId, 
+            templateId, 
+            form.current,
+            publicKey
+        )
+        .then((result) => {console.log(result.text);
+            e.target.reset();
+        },
+        (error) => {
+            console.log(error.text);
+        })
+        swal("Thank you!", "We will get back to you as soon as possible", "success");
+    }
+
+
+  return (
+    <div id="kontakt-cont" className="kontakt-body">
+        <div className="container">
+            <div className="title-box title-box_white">
+                <h1>Kontakt</h1>
+            </div>
+            
+        <div className="kontakt-container">
+            <div className="kontakt__address">
+                <div className="kontakt__address_details">
+                    <div className="kontakt__address_details-post">
+                        <h3>ALTIRA s.r.o.</h3> <br />
+                        <p>Veselice 68, Dolní Bousov 294 04</p>
+                        <p>IČ: 24838756</p>
+                        <p>Číslo účtu: 243113907/0300</p>
+                    </div>
+                    <div className="kontakt__address_details-media">
+                        <div>
+                            <Envelope width={24} height={24} color="#FAFCFF" />
+                            <a href="mailto:info@altira.cz">info@altira.cz</a>
+                        </div>
+                        <div>
+                            <Phone width={24} height={24} color="#FAFCFF" />
+                            <a href="tel:00420 605 700 815">+420 605 700 815</a>
+                        </div>
+                    </div>
+                </div>
+                <div className="kontakt__address_map">
+                    <GoogleMap width={450} height={250}/>
+                </div>
+            </div>
+
+            <div className="kontakt__form">
+                <h3>spojte se s námi</h3>
+                <form ref={form} onSubmit={sendContactForm}>
+                <div className="kontakt__form_sender">
+                    <div className="kontakt__form_sender-input">
+                        <label htmlFor="name">Jméno</label>
+                        <input type="text" id="name" name="user_name" required />
+                    </div>
+                    <div className="kontakt__form_sender-input">
+                        <label htmlFor="email">Váš email</label>
+                        <input name="user_email" type="email" id="email" placeholder="name@email.cz" />
+                    </div>
+                    <div className="kontakt__form_sender-input">
+                        <label htmlFor="phone">Telefon</label>
+                        <input name="to_name" type="tel" id="phone" placeholder="777 888 999" required/>
+                    </div>
+                    <div className="kontakt__form_sender-input">
+                        <textarea name="report" id="" cols="30" rows="10" placeholder="Dobrý den, mám zájem o bližší informace..." required minLength={20}>
+                        </textarea>
+                    </div>   
+                </div>
+
+                <div className="kontakt__form_button">
+                    <button className="contact-button" type="submit">Napište nám</button>
+                </div>
+                </form>
+            </div>
+        </div>
+            
+        </div>
+    </div>
+  )
+}

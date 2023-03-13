@@ -1,0 +1,50 @@
+.zkus-list {
+  max-width: 650px;
+  margin: 60px auto;
+  position: relative;
+
+  &__ul {
+    &_li {
+      list-style: none;
+      display: flex;
+      align-items: center;
+      height: 60px;
+
+      & p {
+        margin: 0 0 0 30px;
+        font-size: 1.2em;
+        color: $altira-color;
+        font-weight: 500;
+        word-wrap: break-word;
+      }
+    }
+  }
+}
+
+.zkus-list::before {
+  margin: -30px -60px;
+  content: "";
+  background: radial-gradient(circle, transparent 25%, #ffffff 26%),
+    linear-gradient(
+      0deg,
+      transparent 44%,
+      #11b5e4 45%,
+      #11b5e4 55%,
+      transparent 56%
+    ),
+    linear-gradient(
+      90deg,
+      transparent 44%,
+      #11b5e4 45%,
+      #11b5e4 55%,
+      transparent 56%
+    );
+  background-size: 1em 1em;
+  background-color: #ffffff;
+  opacity: 0.15;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}

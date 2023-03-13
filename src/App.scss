@@ -1,0 +1,99 @@
+//fonts
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&display=swap"); //font-family: 'Oswald', sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"); //font-family: 'Montserrat', sans-serif;
+
+//variables
+$altira-color: #5f6166;
+$altira-orange: #fa8900;
+$altira-darkblue: #11446e;
+$altira-lightblue: #77b6ea;
+$altira-neonblue: #11b5e4;
+$altira-white: #fafdff;
+
+//font-families
+$text-font: "Montserrat", sans-serif, Arial, Helvetica, sans-serif;
+$title-font: "Oswald", sans-serif, Arial, Helvetica, sans-serif;
+
+//importing stylesheets
+@import "./styles/navbar.scss";
+@import "./styles/hero.scss";
+@import "./styles/carousel.scss";
+@import "./styles/sluzby.scss";
+@import "./styles/ziskate.scss";
+@import "./styles/zkusenosti.scss";
+@import "./styles/about.scss";
+@import "./styles/kontakt.scss";
+@import "./styles/reference.scss";
+@import "./styles/footer.scss";
+
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+#root {
+  font-family: "Montserrat", sans-serif, Arial, Helvetica, sans-serif;
+}
+
+//re-used classes
+.container {
+  position: relative;
+  max-width: 80vw;
+  margin: auto;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  // /* Extra large devices (large laptops and desktops, 1200px and up) */
+  // @media only screen and (min-width: 1300px) {
+  //   width: 60vw;
+  // }
+  // @media only screen and (min-width: 992px) {
+  //   width: 90vw;
+  // }
+}
+
+.title-box {
+  width: 80vw;
+  height: 60px;
+  background: rgba(119, 182, 234, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 45px;
+  // /* Extra large devices (large laptops and desktops, 1200px and up) */
+  // @media only screen and (min-width: 1200px) {
+  //   width: 60vw;
+  // }
+  & h1 {
+    font-family: $title-font;
+    color: $altira-darkblue;
+    font-weight: 400;
+    font-size: 42px;
+    line-height: 60px;
+    text-transform: uppercase;
+  }
+}
+
+.contact-button {
+  width: 96px;
+  height: 33px;
+  border: 2px solid $altira-orange;
+  border-radius: 5px;
+  text-transform: uppercase;
+  color: $altira-darkblue;
+  & p {
+    margin: 0;
+    font-weight: 500;
+    font-family: $title-font;
+    font-size: 1em;
+  }
+
+  &:hover {
+    background-color: $altira-orange;
+    color: $altira-darkblue;
+  }
+}

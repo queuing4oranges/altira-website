@@ -1,0 +1,208 @@
+.kontakt-body {
+  background-color: $altira-lightblue;
+  position: relative;
+
+  &::before {
+    content: "";
+    background: radial-gradient(circle, transparent 25%, #ffffff 26%),
+      linear-gradient(
+        0deg,
+        transparent 44%,
+        #11b5e4 45%,
+        #11b5e4 55%,
+        transparent 56%
+      ),
+      linear-gradient(
+        90deg,
+        transparent 44%,
+        #11b5e4 45%,
+        #11b5e4 55%,
+        transparent 56%
+      );
+    background-size: 1em 1em;
+    background-color: #ffffff;
+    opacity: 0.15;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+}
+
+.kontakt-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.title-box_white {
+  background-color: $altira-white !important;
+  margin-bottom: 60px;
+}
+
+.kontakt__address,
+.kontakt__form {
+  display: flex;
+  flex-direction: column;
+  width: 450px;
+}
+
+.kontakt__address {
+  &_details {
+    background-color: rgba(95, 97, 102, 0.8);
+    box-shadow: 0px 8px 24px -5px rgba(95, 97, 102, 0.75);
+    padding: 1.8em;
+
+    &-post {
+      margin-bottom: 4em;
+      & h3 {
+        color: $altira-white;
+        font-family: $text-font;
+        font-weight: 700;
+        font-size: 1em;
+        line-height: 1.2em;
+      }
+
+      & p {
+        color: $altira-white;
+        font-family: $text-font;
+        font-weight: 400;
+        font-size: 1em;
+        line-height: 1.2em;
+      }
+    }
+
+    &-media {
+      & div {
+        width: 70%;
+        display: flex;
+        margin: 1.5em 0;
+        align-items: center;
+      }
+
+      & a {
+        margin-left: 1.2em;
+        text-decoration: none;
+        color: $altira-white;
+      }
+
+      & a:hover {
+        color: $altira-lightblue;
+      }
+    }
+  }
+
+  &_map {
+    margin-top: 70px;
+    max-width: fit-content;
+  }
+}
+
+.kontakt__form {
+  background-color: rgba(95, 97, 102, 0.8);
+  padding: 1.8em;
+  box-shadow: 0px 8px 24px -5px rgba(95, 97, 102, 0.75);
+
+  & h3 {
+    font-family: $title-font;
+    font-weight: 400;
+    font-size: 1.8em;
+    color: $altira-white;
+    line-height: 0.2em;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 45px;
+  }
+
+  & form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &_sender-input {
+    margin: 2em auto;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+
+    & label {
+      color: $altira-white;
+    }
+
+    & input {
+      width: 220px;
+      height: 30px;
+      color: $altira-color;
+      font-weight: 600;
+      font-size: 1em;
+      font-family: $text-font;
+
+      &:focus {
+        outline: none;
+        background-color: $altira-orange;
+        color: $altira-darkblue;
+      }
+
+      &::placeholder {
+        opacity: 0.5;
+        font-style: oblique;
+        font-size: 0.8em;
+      }
+    }
+
+    & input[type="text"],
+    & input[type="tel"],
+    & input[type="email"] {
+      border: none;
+    }
+
+    & textarea {
+      width: 100%;
+      height: 300px;
+      color: $altira-color;
+      font-weight: 600;
+      resize: none;
+      font-size: 1em;
+      font-family: $text-font;
+
+      &:focus {
+        outline: none;
+        background-color: $altira-orange;
+        color: $altira-darkblue;
+      }
+
+      &::placeholder {
+        opacity: 0.5;
+        font-style: oblique;
+        font-size: 0.8em;
+        padding: 1em;
+      }
+    }
+  }
+
+  &_button {
+    display: flex;
+    justify-content: center;
+
+    & button {
+      font-family: $title-font;
+      text-transform: uppercase;
+    }
+  }
+}
+
+//swal modifications
+.swal-title {
+  text-transform: uppercase !important;
+  font-family: $title-font !important;
+  color: $altira-color;
+}
+
+.swal-modal {
+  background-color: $altira-white;
+}
+
+.swal-text {
+  font-family: $text-font;
+  color: $altira-color;
+}

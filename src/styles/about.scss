@@ -1,0 +1,93 @@
+.about-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 0;
+
+  &__title {
+    & p {
+      font-weight: 500;
+      font-size: 1.2em;
+      line-height: 1.5em;
+      color: #fa8900;
+    }
+  }
+
+  &__images {
+    width: 600px;
+    margin-top: 45px;
+    display: flex;
+    justify-content: space-between;
+    & img {
+      width: 250px;
+      filter: grayscale(100%);
+      border-radius: 50%;
+    }
+    &_radek {
+      opacity: 0.9;
+    }
+  }
+
+  &__names {
+    width: 600px;
+    margin-top: 45px;
+    display: flex;
+    justify-content: space-between;
+
+    &_jana,
+    &_radek {
+      width: 250px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      color: $altira-darkblue;
+
+      & p {
+        font-weight: 700;
+        font-size: 1.2em;
+        line-height: 1.2em;
+      }
+
+      & a {
+        text-decoration: none;
+        color: $altira-color;
+      }
+
+      & a:hover {
+        color: $altira-neonblue;
+      }
+    }
+  }
+}
+
+/* ------ ANIMATIONS ------ */
+.about-image-animation {
+  -webkit-animation: scale-in-center 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+    both;
+  animation: scale-in-center 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@-webkit-keyframes scale-in-center {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+@keyframes scale-in-center {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+  }
+}
