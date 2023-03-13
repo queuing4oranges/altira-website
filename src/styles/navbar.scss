@@ -18,6 +18,10 @@
   text-transform: uppercase;
   padding: 1.3em 0;
 
+  @media only screen and (min-width: 1392px) {
+    max-width: 60vw;
+  }
+
   &__logo {
     display: flex;
     width: 20%;

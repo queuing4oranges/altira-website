@@ -47,13 +47,9 @@ html {
   padding-top: 60px;
   padding-bottom: 60px;
 
-  // /* Extra large devices (large laptops and desktops, 1200px and up) */
-  // @media only screen and (min-width: 1300px) {
-  //   width: 60vw;
-  // }
-  // @media only screen and (min-width: 992px) {
-  //   width: 90vw;
-  // }
+  @media only screen and (min-width: 1392px) {
+    max-width: 60vw;
+  }
 }
 
 .title-box {
@@ -64,10 +60,11 @@ html {
   justify-content: center;
   align-items: center;
   margin-bottom: 45px;
-  // /* Extra large devices (large laptops and desktops, 1200px and up) */
-  // @media only screen and (min-width: 1200px) {
-  //   width: 60vw;
-  // }
+
+  @media only screen and (min-width: 1392px) {
+    max-width: 60vw;
+  }
+
   & h1 {
     font-family: $title-font;
     color: $altira-darkblue;

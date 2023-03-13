@@ -145,6 +145,13 @@
 }
 
 // /* -------RESPONSIVENESS-------*/
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1700px) {
+  .slider-container {
+    width: 70vw;
+  }
+}
+
 // @media only screen and (min-width: 992px) {
 //   .slider-card {
 //     width: 150px;
@@ -165,9 +172,4 @@
 //       top: 100px;
 //     }
 //   }
-// }
-
-// /* Extra large devices (large laptops and desktops, 1200px and up) */
-// @media only screen and (min-width: 1200px) {
-//   width: 60vw;
 // }
