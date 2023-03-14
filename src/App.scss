@@ -44,53 +44,63 @@ html {
   position: relative;
   max-width: 80vw;
   margin: auto;
-  padding-top: 60px;
-  padding-bottom: 60px;
-
-  @media only screen and (min-width: 1392px) {
-    max-width: 60vw;
-  }
+  padding-top: 3.7em;
+  padding-bottom: 3.7em;
 }
 
 .title-box {
   width: 80vw;
-  height: 60px;
+  height: 3.7em;
   background: rgba(119, 182, 234, 0.2);
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 45px;
-
-  @media only screen and (min-width: 1392px) {
-    max-width: 60vw;
-  }
+  margin-bottom: 2.8em;
 
   & h1 {
     font-family: $title-font;
     color: $altira-darkblue;
     font-weight: 400;
-    font-size: 42px;
-    line-height: 60px;
+    font-size: 2.6rem;
+    line-height: 3.7rem;
     text-transform: uppercase;
   }
 }
 
 .contact-button {
-  width: 96px;
-  height: 33px;
-  border: 2px solid $altira-orange;
-  border-radius: 5px;
+  width: 6rem;
+  height: 2rem;
+  border: 0.1rem solid $altira-orange;
+  border-radius: 0.3rem;
   text-transform: uppercase;
   color: $altira-darkblue;
   & p {
     margin: 0;
     font-weight: 500;
     font-family: $title-font;
-    font-size: 1em;
+    font-size: 1rem;
   }
 
   &:hover {
     background-color: $altira-orange;
     color: $altira-darkblue;
+  }
+}
+
+/* ------ RESPONSIVENESS ------ */
+//mobiles
+@media only screen and (max-width: 600px) {
+  .container {
+    width: 90vw;
+  }
+}
+
+//large screens
+@media only screen and (min-width: 1392px) {
+  .container {
+    width: 60vw;
+  }
+  .title-box {
+    width: 60vw;
   }
 }

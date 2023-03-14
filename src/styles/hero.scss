@@ -1,9 +1,6 @@
 .hero__container {
   display: flex;
   position: relative;
-  @media only screen and (min-width: 1392px) {
-    max-width: 60vw;
-  }
 }
 
 .hero-text {
@@ -17,7 +14,7 @@
     line-height: 62px;
     text-transform: uppercase;
     display: inline-block;
-    width: 600px;
+    max-width: 12em;
   }
   &__description {
     width: 440px;
@@ -82,15 +79,10 @@
   box-shadow: 0px 8px 24px -5px rgba(95, 97, 102, 0.75);
 }
 
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-  .hero-container {
-    width: 70vw;
-  }
-}
-@media only screen and (min-width: 992px) {
+/* ------ RESPONSIVENESS ------ */
+//mobiles
+@media only screen and (max-width: 600px) {
   .hero__container {
-    width: 80vw;
-    margin: auto;
+    width: 90vw;
   }
 }

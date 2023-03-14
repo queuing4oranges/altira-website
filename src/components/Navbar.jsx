@@ -4,6 +4,11 @@ import AltiraLogo from "../icons/AltiraLogo";
 
 export default function Navbar() {
 
+  const toggleHamburger = () => {
+    let menu = document.querySelector(".navbar__links");
+    menu.classList.toggle("show");
+  }
+
 
 
   return (
@@ -11,8 +16,12 @@ export default function Navbar() {
     <div className="navbar">
       <div className="navbar__logo">
         <Link activeClass="none" smooth spy to="home-cont" ><AltiraLogo width={92} height={36} /></Link>
-        
       </div>
+
+      <div className="mobile-navbar">
+        <button onClick={toggleHamburger}></button>
+      </div>
+
       <div className="navbar__links">
         <Link activeClass="active" smooth spy to="sluzby-cont" >služby</Link>
         <Link activeClass="active" smooth spy to="zkus-cont" >naše zkušenosti</Link>

@@ -7,8 +7,9 @@ export default function Hero() {
     <div id="home-cont" className="container">
         <div className="hero__container">
             <div className="hero-text">
-                <h1 className="hero-text__title">poradenství / optimalizace / <br /> interim management
-                </h1> 
+                <p className="hero-text__title">poradenství / optimalizace / <br />
+                 interim management
+                </p> 
                 <p className="hero-text__description">
                     Jsme nadšenci, kteří se v logistice především v
                     automobilovém průmyslu pohybují přes 20 let

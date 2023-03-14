@@ -1,6 +1,6 @@
 .sluzby-section {
   display: flex;
-  padding: 60px 0;
+  padding: 1.5em 0;
   justify-content: space-between;
   align-items: center;
 
@@ -47,7 +47,7 @@
 
   &__image {
     & img {
-      width: 500px;
+      width: 30em;
       box-shadow: 0px 8px 24px -5px rgba(95, 97, 102, 0.75);
       object-fit: fill;
     }
@@ -58,65 +58,28 @@
   padding-right: 3em;
 }
 
-/* ------ ANIMATIONS ------ */
+/* ------ RESPONSIVENESS ------ */
+@media only screen and (max-width: 600px) {
+  .sluzby-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10px auto;
 
-.fly-in-from-left {
-  -webkit-animation: slide-in-left 0.6s cubic-bezier(0.215, 0.61, 0.355, 1) both;
-  animation: slide-in-left 0.6s cubic-bezier(0.215, 0.61, 0.355, 1) both;
-}
+    &__image {
+      padding: 0;
+      display: flex;
+      justify-content: center;
 
-@-webkit-keyframes slide-in-left {
-  0% {
-    -webkit-transform: translateX(-1000px);
-    transform: translateX(-1000px);
-    opacity: 0;
+      & img {
+        margin-top: 1em;
+        width: 80%;
+      }
+    }
   }
-  100% {
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
-@keyframes slide-in-left {
-  0% {
-    -webkit-transform: translateX(-1000px);
-    transform: translateX(-1000px);
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
 
-.fly-in-from-right {
-  -webkit-animation: slide-in-right 0.6s cubic-bezier(0.215, 0.61, 0.355, 1)
-    both;
-  animation: slide-in-right 0.6s cubic-bezier(0.215, 0.61, 0.355, 1) both;
-}
-
-@-webkit-keyframes slide-in-right {
-  0% {
-    -webkit-transform: translateX(1000px);
-    transform: translateX(1000px);
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
-@keyframes slide-in-right {
-  0% {
-    -webkit-transform: translateX(1000px);
-    transform: translateX(1000px);
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
-    opacity: 1;
+  .column-reverse {
+    flex-direction: column-reverse;
   }
 }

@@ -18,10 +18,6 @@
   text-transform: uppercase;
   padding: 1.3em 0;
 
-  @media only screen and (min-width: 1392px) {
-    max-width: 60vw;
-  }
-
   &__logo {
     display: flex;
     width: 20%;
@@ -54,21 +50,30 @@
   }
 }
 
+.mobile-navbar {
+  display: none;
+}
+
 .active {
   opacity: 0.6;
 }
 
-/* -------RESPONSIVENESS-------*/
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
+/* ------ RESPONSIVENESS ------ */
+//mobiles
+@media only screen and (max-width: 600px) {
   .navbar {
-    width: 60vw;
+    max-width: 90vw;
   }
-}
 
-@media only screen and (min-width: 992px) {
-  .navbar {
-    width: 80vw;
-    margin: auto;
+  .mobile-navbar {
+    display: block;
+  }
+
+  .navbar__links {
+    display: none;
+  }
+
+  .show {
+    display: block;
   }
 }

@@ -15,7 +15,7 @@ export default function Sluzby() {
     }, [])
 
     return (
-    <div id="sluzby-cont" className="container">
+    <div id="sluzby-cont" className="container sluzby-cont">
         <div className="title-box">
             <h1>Služby</h1>
         </div>
@@ -47,7 +47,7 @@ export default function Sluzby() {
         </section>
 
 
-        <section className="sluzby-section"> 
+        <section className="sluzby-section column-reverse"> 
 
             <div className="sluzby-section__image padding-right">
                 <img src={chyb} alt="diagram of organigram with hand drawing" />
@@ -102,7 +102,7 @@ export default function Sluzby() {
             </div>
         </section>
     
-            <section className="sluzby-section"> 
+            <section className="sluzby-section column-reverse"> 
 
             <div className="sluzby-section__image padding-right">
                 <img src={outsourcing} alt="warehouse from above" />
@@ -132,23 +132,3 @@ export default function Sluzby() {
     </div>
   )
 }
-
-    // const myRef = useRef();
-    // const [isIntersecting, setIsIntersecting] = useState()
-
-    // useEffect(() => {
-    //   const observer = new IntersectionObserver((entries) => {
-    //     const entry = entries[0];
-
-    //     entries.forEach(entry => {
-    //         if(entry.isIntersecting) {
-    //             document.querySelector('.sluzby-section__text').classList.add('fly-in-from-left');
-    //         } else if(!entry.isIntersecting) {
-    //             document.querySelector('.sluzby-section__text').classList.remove('fly-in-from-left');
-    //             setIsIntersecting(false);
-    //         }
-    //     })
-    //   })
-    
-    //   observer.observe(myRef.current);
-    // }, [isIntersecting])

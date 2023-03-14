@@ -35,9 +35,6 @@
   margin: 4em auto;
   display: flex;
   justify-content: space-between;
-  @media only screen and (min-width: 992px) {
-    background: orange;
-  }
 }
 
 .slider-card {
@@ -147,32 +144,21 @@
   }
 }
 
-// /* -------RESPONSIVENESS-------*/
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1700px) {
-  .slider-container {
-    width: 70vw;
+/* ------ RESPONSIVENESS ------ */
+//mobiles
+@media only screen and (max-width: 600px) {
+  .slider__container {
+    display: none;
+  }
+  .values-container,
+  .values-container::before {
+    display: none;
   }
 }
 
-// @media only screen and (min-width: 992px) {
-//   .slider-card {
-//     width: 150px;
-//     height: 220px;
-//     padding: 10px;
-//     outline-offset: -10px;
-
-//     &__title {
-//       font-size: 0.9em;
-//     }
-
-//     & svg {
-//       width: 35px;
-//       height: 35px;
-//     }
-
-//     &__text {
-//       top: 100px;
-//     }
-//   }
-// }
+//large screens
+@media only screen and (min-width: 1900px) {
+  .slider__container {
+    max-width: 60vw;
+  }
+}
