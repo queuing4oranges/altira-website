@@ -16,11 +16,20 @@
     }
   }
 
-  &__images {
+  &__cards-cont {
+    display: flex;
+    width: 70vw;
+    margin: auto;
+  }
+
+  &__card {
     width: 37.5em;
     margin-top: 2.8em;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
     & img {
       width: 15.5em;
       filter: grayscale(100%);
@@ -28,37 +37,26 @@
     }
   }
 
-  &__names {
-    width: 37.5em;
+  &__card_name {
+    width: 15.5em;
     margin-top: 2.8em;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    color: $altira-darkblue;
+    font-weight: 700;
+    font-size: 1.2em;
+    line-height: 1.2em;
+  }
+  & a {
+    text-decoration: none;
+    color: $altira-color;
+  }
 
-    &_jana,
-    &_radek {
-      width: 15.5em;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      color: $altira-darkblue;
-
-      & p {
-        font-weight: 700;
-        font-size: 1.2em;
-        line-height: 1.2em;
-      }
-
-      & a {
-        text-decoration: none;
-        color: $altira-color;
-      }
-
-      & a:hover {
-        color: $altira-neonblue;
-      }
-    }
+  & a:hover {
+    color: $altira-neonblue;
   }
 }
+// }
 
 /* ------ ANIMATIONS ------ */
 .about-image-animation {
@@ -99,16 +97,19 @@
     width: 70vw;
     margin: auto;
 
-    &__images,
-    &__names,
-    &__title {
-      width: 80%;
-      justify-content: space-between;
+    &__cards-cont {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
 
-      & img {
-        width: 8em;
-        margin: 0;
-      }
+    &__card {
+      width: 50vw;
+    }
+
+    & img {
+      width: 14em;
+      margin: 0;
     }
   }
 }

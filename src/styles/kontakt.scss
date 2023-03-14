@@ -216,9 +216,21 @@
 @media only screen and (max-width: 600px) {
   .kontakt-container {
     flex-direction: column;
+    align-items: center;
   }
+
+  .kontakt__address,
+  .kontakt__form {
+    margin: auto;
+  }
+
+  .kontakt__address_map {
+    margin-bottom: 70px;
+  }
+
   .kontakt-body,
   .kontakt-body::before {
-    width: 90vw;
+    width: 100vw;
+    margin: auto;
   }
 }

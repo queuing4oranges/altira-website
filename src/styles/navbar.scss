@@ -50,7 +50,7 @@
   }
 }
 
-.mobile-navbar {
+.mobile-navbar__button {
   display: none;
 }
 
@@ -65,8 +65,22 @@
     max-width: 90vw;
   }
 
-  .mobile-navbar {
+  .mobile-navbar__button {
     display: block;
+    position: absolute;
+    right: 10vw;
+    top: 10px;
+
+    & button {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 2px solid #fa8900;
+      position: relative;
+    }
   }
 
   .navbar__links {
@@ -74,6 +88,22 @@
   }
 
   .show {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-top: 200px;
+    width: 25vw;
+    background-color: $altira-color;
+    border-radius: 5px;
+
+    & a,
+    & a:last-child {
+      color: $altira-white;
+      margin-right: 0.5em;
+      margin-top: 1.5em;
+    }
+
+    border: 2px solid #fa8900;
   }
 }
