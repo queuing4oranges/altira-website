@@ -28,7 +28,12 @@
           margin-left: 10px;
           font-weight: 500;
           color: $altira-color;
-          line-height: 10px;
+          line-height: 1.2em;
+          word-wrap: break-word;
+        }
+
+        & svg {
+          overflow: visible;
         }
       }
     }
@@ -47,6 +52,10 @@
       object-fit: fill;
     }
   }
+}
+
+.padding-right {
+  padding-right: 3em;
 }
 
 /* ------ ANIMATIONS ------ */

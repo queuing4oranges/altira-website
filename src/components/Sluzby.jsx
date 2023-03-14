@@ -26,7 +26,7 @@ export default function Sluzby() {
             data-aos="fade-right" 
             data-aos-easing="linear"
             data-aos-duration="500"
-            className="sluzby-section__text">
+            className="sluzby-section__text padding-right">
                 <div className="sluzby-section__text_title">
                     <h2>Poradenství / Optimalizace</h2>
                 </div>
@@ -49,7 +49,7 @@ export default function Sluzby() {
 
         <section className="sluzby-section"> 
 
-            <div className="sluzby-section__image">
+            <div className="sluzby-section__image padding-right">
                 <img src={chyb} alt="diagram of organigram with hand drawing" />
             </div>
 
@@ -81,7 +81,7 @@ export default function Sluzby() {
             data-aos="fade-right"
             data-aos-easing="linear"
             data-aos-duration="500" 
-            className="sluzby-section__text">
+            className="sluzby-section__text padding-right">
                 <div className="sluzby-section__text_title">
                     <h2>Interim Management</h2>
                 </div>
@@ -104,7 +104,7 @@ export default function Sluzby() {
     
             <section className="sluzby-section"> 
 
-            <div className="sluzby-section__image">
+            <div className="sluzby-section__image padding-right">
                 <img src={outsourcing} alt="warehouse from above" />
             </div>
 
