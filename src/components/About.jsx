@@ -33,7 +33,7 @@ export default function About() {
 
 
   return (
-    <div id="onas" className="container">
+    <div id="onas" className="container another">
         <div className="title-box">
             <h1>o nás</h1>
         </div>

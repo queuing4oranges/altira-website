@@ -19,7 +19,7 @@
         #11b5e4 55%,
         transparent 56%
       );
-    background-size: 1em 1em;
+    background-size: 1em 1em; //size of the crosses
     background-color: #ffffff;
     opacity: 0.15;
     position: absolute;
@@ -38,6 +38,7 @@
 .title-box_white {
   background-color: $altira-white !important;
   margin-bottom: 60px;
+  box-shadow: none !important;
 }
 
 .kontakt__address,
@@ -52,10 +53,10 @@
   &_details {
     background-color: rgba(95, 97, 102, 0.8);
     box-shadow: 0px 8px 24px -5px rgba(95, 97, 102, 0.75);
-    padding: 1.8em;
+    padding: 30px;
 
     &-post {
-      margin-bottom: 4em;
+      margin-bottom: 60px;
       & h3 {
         color: $altira-white;
         font-family: $text-font;
@@ -82,7 +83,7 @@
       }
 
       & a {
-        margin-left: 1.2em;
+        margin-left: 24px;
         text-decoration: none;
         color: $altira-white;
       }
@@ -101,7 +102,7 @@
 
 .kontakt__form {
   background-color: rgba(95, 97, 102, 0.8);
-  padding: 1.8em;
+  padding: 30px;
   box-shadow: 0px 8px 24px -5px rgba(95, 97, 102, 0.75);
 
   & h3 {
@@ -121,7 +122,7 @@
   }
 
   &_sender-input {
-    margin: 2em auto;
+    margin: 30px auto;
     width: 90%;
     display: flex;
     justify-content: space-between;
@@ -179,7 +180,7 @@
         opacity: 0.5;
         font-style: oblique;
         font-size: 0.8em;
-        padding: 1em;
+        padding: 15px;
       }
     }
   }
@@ -221,11 +222,20 @@
 
   .kontakt__address,
   .kontakt__form {
+    width: 350px;
     margin: auto;
   }
 
+  .kontakt__address_details {
+    width: 350px;
+  }
   .kontakt__address_map {
+    width: 350px !important;
     margin-bottom: 70px;
+  }
+
+  iframe {
+    display: none;
   }
 
   .kontakt-body,

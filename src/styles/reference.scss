@@ -14,10 +14,10 @@
 }
 
 .ref-card {
-  width: 12.5em;
-  height: 15.5em;
+  width: 200px;
+  height: 250px;
   margin: auto;
-  padding: 1.8em;
+  padding: 30px;
   border: 3px solid $altira-orange;
   border-radius: 5px;
   box-shadow: 5px 5px 10px 0px rgba(250, 137, 0, 0.75);
@@ -43,20 +43,26 @@
     align-items: center;
     padding: 5%;
     background-color: white;
-    border-radius: 10px;
+    border-radius: 5px;
   }
 }
 
 /* ------ RESPONSIVENESS ------ */
 //mobiles
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 600px) {
   .reference-cards {
+    justify-items: center;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, 1fr);
     grid-column-gap: 10px;
     grid-row-gap: 20px;
     align-content: space-between;
     justify-content: center;
+  }
+
+  .reference-cards:hover > :not(:hover) {
+    opacity: 1;
+    background-color: white;
   }
 }

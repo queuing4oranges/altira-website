@@ -1,6 +1,6 @@
 .zkus-list {
   max-width: 650px;
-  margin: 60px auto;
+  margin: 120px auto 0;
   position: relative;
 
   &__ul {
@@ -16,6 +16,7 @@
         color: $altira-color;
         font-weight: 500;
         word-wrap: break-word;
+        z-index: 5;
       }
     }
   }
@@ -47,6 +48,7 @@
   right: 0;
   bottom: 0;
   left: 0;
+  z-index: -1;
 }
 
 /* ------ RESPONSIVENESS ------ */
@@ -55,10 +57,16 @@
   .zkus-list::before {
     margin: 0;
   }
-}
 
-//large screens
-@media only screen and (min-width: 1392px) {
-  .container {
+  .zkus-list__ul_li {
+    height: fit-content;
+    word-wrap: break-word;
+  }
+
+  .zkus-list p {
+    display: inline-block;
+    line-height: 60px;
+    font-size: 1.2em;
+    margin-left: 50px;
   }
 }

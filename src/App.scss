@@ -50,12 +50,15 @@ html {
 
 .title-box {
   width: 80vw;
-  height: 3.7em;
+  height: 60px;
   background: rgba(119, 182, 234, 0.2);
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 2.8em;
+  margin-bottom: 45px;
+  box-shadow: 5px 5px 5px 0px rgba(224, 238, 251, 0.75);
+  -webkit-box-shadow: 5px 5px 5px 0px rgba(224, 238, 251, 0.75);
+  -moz-box-shadow: 5px 5px 5px 0px rgba(224, 238, 251, 0.75);
 
   & h1 {
     font-family: $title-font;
@@ -68,10 +71,10 @@ html {
 }
 
 .contact-button {
-  width: 6rem;
-  height: 2rem;
+  width: 100px;
+  height: 30px;
   border: 0.1rem solid $altira-orange;
-  border-radius: 0.3rem;
+  border-radius: 3px;
   text-transform: uppercase;
   color: $altira-darkblue;
   & p {

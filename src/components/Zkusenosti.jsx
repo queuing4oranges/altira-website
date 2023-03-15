@@ -12,24 +12,29 @@ export default function Zkusenosti() {
             <ul className="zkus-list__ul">
                 <li className="zkus-list__ul_li">
                     <ArrowBull width={40} height={40} color="#fa8900" />
+                    <br />
                     <p>vedení logistiky ve výrobních závodech</p>
                 </li>
                 <li className="zkus-list__ul_li">
                     <ArrowBull width={40} height={40} color="#fa8900" />
+                    <br />
                     <p>vedení procesů logistiky dodávaných dílů způsoby JIS, <br />
                         JIT, KANBAN, CROSSDOCK</p>
                 </li>
                 <li className="zkus-list__ul_li">
                     <ArrowBull width={40} height={40} color="#fa8900" />
+                    <br />
                     <p>projektové řízení</p>
 
                 </li>
                 <li className="zkus-list__ul_li">
                     <ArrowBull width={40} height={40} color="#fa8900" />
+                    <br />
                     <p>přípravy procesů a dokumentce k certifikaci</p>
                 </li>
                 <li className="zkus-list__ul_li">
                     <ArrowBull width={40} height={40} color="#fa8900" />
+                    <br />
                     <p>zpracování podkladů k dotačním programům</p>
                 </li>
             </ul>

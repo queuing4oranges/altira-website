@@ -59,10 +59,17 @@
 }
 
 /* ------ RESPONSIVENESS ------ */
+//large screens
+@media only screen and (min-width: 1900px) {
+  .navbar {
+    max-width: 60vw;
+  }
+}
 //mobiles
 @media only screen and (max-width: 600px) {
-  .navbar {
-    max-width: 90vw;
+  .navbar-container {
+    max-width: 100%;
+    margin: 0;
   }
 
   .mobile-navbar__button {
@@ -101,7 +108,9 @@
     & a:last-child {
       color: $altira-white;
       margin-right: 0.5em;
-      margin-top: 1.5em;
+      margin-top: 10px;
+      padding-top: 10px;
+      text-align: right;
     }
 
     border: 2px solid #fa8900;
