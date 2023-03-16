@@ -26,6 +26,8 @@ export default function Navbar() {
 
 
       <div className="navbar__links">
+
+        
         <Link onClick={toggleHamburger} activeClass="active" smooth spy to="sluzby-cont" >služby</Link>
         <Link onClick={toggleHamburger} activeClass="active" smooth spy to="zkus-cont" >naše zkušenosti</Link>
         <Link onClick={toggleHamburger} activeClass="active" smooth spy to="onas" >o nás</Link>
