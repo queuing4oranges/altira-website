@@ -83,7 +83,7 @@
 //mobiles
 @media only screen and (max-width: 600px) {
   .hero__container {
-    width: 90vw;
+    width: 80%;
   }
 
   .hero-text {
@@ -91,18 +91,19 @@
       font-size: 28px;
       line-height: 40px;
       width: 300px;
+      max-width: 300px;
     }
     &__description {
-      width: 220px;
+      max-width: 220px;
       font-size: 14px;
     }
 
     &__button {
-      width: 120px;
+      max-width: 120px;
     }
   }
 
-  .hero-image img {
+  .hero-image {
     display: none;
   }
 }

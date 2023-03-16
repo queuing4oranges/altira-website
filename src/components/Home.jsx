@@ -15,9 +15,9 @@ export default function Home() {
     <div >
       <Navbar/>
       <Hero />
-      <ImageSlider />
-      <Sluzby />
-      <Ziskate />
+      {/* <ImageSlider /> */}
+      {/* <Sluzby /> */}
+      {/* <Ziskate /> */}
       <Zkusenosti />
       <About />
       <Kontakt />

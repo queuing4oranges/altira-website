@@ -9,35 +9,52 @@ export default function Zkusenosti() {
         </div>
 
         <div className="zkus-list">
-            <ul className="zkus-list__ul">
-                <li className="zkus-list__ul_li">
+            <div className="zkus-list__item">
+                <div className="zkus-list__item_icon">
                     <ArrowBull width={40} height={40} color="#fa8900" />
-                    <br />
+                </div>
+                <div className="zkus-list__item_text">
                     <p>vedení logistiky ve výrobních závodech</p>
-                </li>
-                <li className="zkus-list__ul_li">
-                    <ArrowBull width={40} height={40} color="#fa8900" />
-                    <br />
-                    <p>vedení procesů logistiky dodávaných dílů způsoby JIS, <br />
-                        JIT, KANBAN, CROSSDOCK</p>
-                </li>
-                <li className="zkus-list__ul_li">
-                    <ArrowBull width={40} height={40} color="#fa8900" />
-                    <br />
-                    <p>projektové řízení</p>
+                </div>
+            </div>
 
-                </li>
-                <li className="zkus-list__ul_li">
+            <div className="zkus-list__item">
+                <div className="zkus-list__item_icon">
                     <ArrowBull width={40} height={40} color="#fa8900" />
-                    <br />
+                </div>
+                <div className="zkus-list__item_text">
+                    <p>vedení procesů logistiky dodávaných dílů způsoby JIS,
+                        JIT, KANBAN, CROSSDOCK</p>
+                </div>
+            </div>
+
+            <div className="zkus-list__item">
+                <div className="zkus-list__item_icon">
+                    <ArrowBull width={40} height={40} color="#fa8900" />
+                </div>
+                <div className="zkus-list__item_text">
+                    <p>projektové řízení</p>
+                </div>
+            </div>
+
+            <div className="zkus-list__item">
+                <div className="zkus-list__item_icon">
+                    <ArrowBull width={40} height={40} color="#fa8900" />
+                </div>
+                <div className="zkus-list__item_text">
                     <p>přípravy procesů a dokumentce k certifikaci</p>
-                </li>
-                <li className="zkus-list__ul_li">
+                </div>
+            </div>
+
+            <div className="zkus-list__item">
+                <div className="zkus-list__item_icon">
                     <ArrowBull width={40} height={40} color="#fa8900" />
-                    <br />
+                </div>
+                <div className="zkus-list__item_text">
                     <p>zpracování podkladů k dotačním programům</p>
-                </li>
-            </ul>
+                </div>
+            </div>
+          
         </div>
     </div>
   )

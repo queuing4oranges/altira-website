@@ -60,6 +60,9 @@
 
 /* ------ RESPONSIVENESS ------ */
 @media only screen and (max-width: 600px) {
+  .sluzby-container {
+    width: 90%;
+  }
   .sluzby-section {
     display: flex;
     flex-direction: column;
@@ -77,6 +80,10 @@
         width: 80%;
       }
     }
+  }
+
+  .padding-right {
+    padding-right: unset;
   }
 
   .column-reverse {
