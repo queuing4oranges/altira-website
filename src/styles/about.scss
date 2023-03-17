@@ -1,9 +1,9 @@
-.another {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
+// .another {
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: center;
+//   align-items: center;
+// }
 
 .about-container {
   width: 80vw;
@@ -106,6 +106,10 @@
     width: 70vw;
     margin: auto;
 
+    &__title p {
+      display: block;
+      text-align: center;
+    }
     &__cards-cont {
       flex-direction: column;
       justify-content: center;

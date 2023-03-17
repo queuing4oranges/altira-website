@@ -91,10 +91,36 @@
     padding: 5px;
   }
 
+  .mobile-navbar__button {
+    & button {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      border: 2px solid $altira-lightblue;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
   .mobile-navbar__links {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     align-items: flex-end;
+    //
+    text-transform: uppercase;
+    margin-bottom: 4px;
+  }
+
+  .mobile-navbar__list {
+    & li {
+      margin-bottom: 10px;
+      padding: 5px;
+    }
+    & li:nth-child(odd) {
+      background: $altira-lightblue;
+      color: $altira-white;
+    }
   }
 }

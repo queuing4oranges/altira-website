@@ -97,6 +97,16 @@ html {
     width: 90%;
     // border: 1px blue solid;
   }
+
+  .title-box {
+    width: 90%;
+    height: 45px;
+    margin: auto;
+
+    & h1 {
+      font-size: 1.6rem;
+    }
+  }
 }
 
 //large screens

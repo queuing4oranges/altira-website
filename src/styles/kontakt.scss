@@ -37,7 +37,7 @@
 
 .title-box_white {
   background-color: $altira-white !important;
-  margin-bottom: 60px;
+  margin-bottom: 60px !important;
   box-shadow: none !important;
 }
 
@@ -45,11 +45,11 @@
 .kontakt__form {
   display: flex;
   flex-direction: column;
-  width: 450px;
+  max-width: 450px;
 }
 
 .kontakt__address {
-  margin-right: 2em;
+  margin-right: 30px;
   &_details {
     background-color: rgba(95, 97, 102, 0.8);
     box-shadow: 0px 8px 24px -5px rgba(95, 97, 102, 0.75);
@@ -78,12 +78,12 @@
       & div {
         width: 70%;
         display: flex;
-        margin: 1.5em 0;
+        margin: 20px 0;
         align-items: center;
       }
 
       & a {
-        margin-left: 24px;
+        margin-left: 20px;
         text-decoration: none;
         color: $altira-white;
       }
@@ -123,7 +123,7 @@
 
   &_sender-input {
     margin: 30px auto;
-    width: 90%;
+    max-width: 90%;
     display: flex;
     justify-content: space-between;
 
@@ -215,32 +215,59 @@
 /* ------ RESPONSIVENESS ------ */
 //mobiles
 @media only screen and (max-width: 600px) {
+  .kontakt-body,
+  .kontakt-body::before {
+    width: 100vw;
+    margin: auto;
+  }
+
   .kontakt-container {
-    flex-direction: column;
+    flex-direction: column-reverse;
+    justify-content: center;
     align-items: center;
   }
 
   .kontakt__address,
   .kontakt__form {
-    width: 350px;
+    max-width: 100%;
     margin: auto;
   }
 
-  .kontakt__address_details {
-    width: 350px;
+  .kontakt__address {
+    margin-top: 45px;
+    &_details {
+      max-width: 100%;
+    }
+
+    &_map {
+      max-width: 100% !important;
+      // margin-bottom: 70px;
+    }
   }
-  .kontakt__address_map {
-    width: 350px !important;
-    margin-bottom: 70px;
+
+  .kontakt__form {
+    padding: 3%;
+    max-width: 100%;
+    & h3 {
+      font-size: 1.6em;
+    }
+
+    & form {
+      max-width: 100%;
+    }
+    &_sender-input {
+      flex-direction: column;
+      & input {
+        margin-top: 3%;
+      }
+    }
+
+    &_button {
+      margin-bottom: 15px;
+    }
   }
 
   iframe {
     display: none;
-  }
-
-  .kontakt-body,
-  .kontakt-body::before {
-    width: 100vw;
-    margin: auto;
   }
 }
