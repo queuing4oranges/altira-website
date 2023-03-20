@@ -1,7 +1,7 @@
-* {
-  // border: green 1px solid;
-  // overflow-x: hidden;
-}
+// * {
+//   border: green 1px solid;
+//   overflow-x: hidden;
+// }
 
 .sluzby-section {
   align-items: center;
@@ -72,6 +72,7 @@
     width: 90%;
   }
   .sluzby-section {
+    overflow-x: hidden; //overflow breaking the styling
     align-items: center;
     display: flex;
     flex-direction: column;

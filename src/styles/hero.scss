@@ -85,7 +85,8 @@
 //mobiles
 @media only screen and (max-width: 600px) {
   .hero__container {
-    width: 80%;
+    width: 90%;
+    margin: auto;
   }
 
   .hero-text {
@@ -93,7 +94,6 @@
       font-size: 42px;
       line-height: 60px;
       max-width: 300px;
-      width: 300px;
     }
     &__description {
       font-size: 14px;
