@@ -1,16 +1,21 @@
+* {
+  // border: green 1px solid;
+  // overflow-x: hidden;
+}
+
 .sluzby-section {
-  display: flex;
-  padding: 25px 0;
-  justify-content: space-between;
   align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 25px 0;
 
   & h2 {
+    color: $altira-color;
     font-family: $title-font;
-    font-weight: 500;
     font-size: 1.6em;
+    font-weight: 500;
     line-height: 1.6em;
     text-transform: uppercase;
-    color: $altira-color;
   }
 
   &__text {
@@ -20,15 +25,15 @@
       padding-left: 0;
 
       & li {
-        list-style: none;
-        display: flex;
         align-items: center;
+        display: flex;
+        list-style: none;
 
         & p {
-          margin-left: 10px;
-          font-weight: 500;
           color: $altira-color;
+          font-weight: 500;
           line-height: 1.2em;
+          margin-left: 10px;
           word-wrap: break-word;
         }
 
@@ -39,17 +44,20 @@
     }
 
     &_description {
-      font-weight: 500;
       color: $altira-color;
+      font-weight: 500;
       line-height: 1.8em;
+      max-width: 350px;
+      overflow-x: hidden;
     }
   }
 
   &__image {
     & img {
-      width: 480px;
       box-shadow: 0px 8px 24px -5px rgba(95, 97, 102, 0.75);
       object-fit: fill;
+      max-width: 100%;
+      height: auto;
     }
   }
 }
@@ -64,22 +72,34 @@
     width: 90%;
   }
   .sluzby-section {
+    align-items: center;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
-    margin: 10px auto;
+    // margin: 10px auto;
 
     &__image {
-      padding: 0;
       display: flex;
       justify-content: center;
+      padding: 0;
+      margin: 0;
+      width: fit-content;
 
       & img {
         margin-top: 1em;
-        width: 80%;
+        width: 70%;
       }
     }
+  }
+
+  .sluzby-section__text_description,
+  .sluzby-section__text_title,
+  .sluzby-section__text_list {
+    max-width: 250px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    justify-content: center;
   }
 
   .padding-right {

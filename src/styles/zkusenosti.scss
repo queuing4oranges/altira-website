@@ -1,31 +1,29 @@
 .zkus-list {
-  max-width: 550px;
-  margin: 120px auto 0;
-  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  max-width: 550px;
+  margin: 120px auto 0;
+  position: relative;
 
   &__item {
     max-height: 70px;
     max-width: 550px;
-
-    display: flex;
     align-items: center;
+    display: flex;
     padding: 30px;
 
     &_text {
-      margin-left: 30px;
-      font-size: 1.2em;
       color: $altira-color;
       font-weight: 500;
+      font-size: 1.2em;
+      margin-left: 30px;
       z-index: 5;
     }
   }
 }
 
 .zkus-list::before {
-  margin: -30px -60px;
   content: "";
   background: radial-gradient(circle, transparent 25%, #ffffff 26%),
     linear-gradient(
@@ -42,8 +40,9 @@
       #11b5e4 55%,
       transparent 56%
     );
-  background-size: 1em 1em;
   background-color: #ffffff;
+  background-size: 1em 1em;
+  margin: -30px -60px;
   opacity: 0.15;
   position: absolute;
   top: 0;
@@ -63,15 +62,14 @@
   .zkus-list {
     margin-top: 60px;
     &__item {
-      flex-direction: column;
       align-items: center;
+      flex-direction: column;
       justify-content: center;
+      margin: auto;
       max-height: fit-content;
       max-width: 60%;
-      margin: auto;
-      text-align: center;
       padding: 15px;
-
+      text-align: center;
       &_text {
         margin-left: 0;
       }

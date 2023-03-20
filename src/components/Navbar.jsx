@@ -14,7 +14,7 @@ export default function Navbar() {
 
 
   return (
-    <div className="navbar-container">
+    <div className="navbar-container sticky">
       
       <div className="navbar">
         <div className="navbar__logo">

@@ -26,7 +26,7 @@ export default function Kontakt() {
         (error) => {
             console.log(error.text);
         })
-        swal("Thank you!", "We will get back to you as soon as possible", "success");
+        swal("Děkujeme!", "Ozveme se co nejdříve.", "success");
     }
 
 
@@ -85,7 +85,7 @@ export default function Kontakt() {
                 </div>
 
                 <div className="kontakt__form_button">
-                    <button className="contact-button" type="submit">Napište nám</button>
+                    <button className="contact-button" type="submit">odeslat</button>
                 </div>
                 </form>
             </div>

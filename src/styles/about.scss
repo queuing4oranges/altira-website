@@ -1,64 +1,57 @@
-// .another {
-//   display: flex;
-//   flex-direction: column;
-//   justify-content: center;
-//   align-items: center;
-// }
-
 .about-container {
-  width: 80vw;
+  align-items: center;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  padding: 30px 0;
   margin: auto;
+  padding: 30px 0;
+  width: 80vw;
 
   &__title {
     & p {
+      color: #fa8900;
       font-weight: 500;
       font-size: 1.2em;
       line-height: 1.5em;
-      color: #fa8900;
     }
   }
 
   &__cards-cont {
+    align-items: center;
     display: flex;
     justify-content: center;
-    align-items: center;
-    width: 70vw;
     margin: auto;
+    width: 70vw;
   }
 
   &__card {
-    width: 600px;
-    margin-top: 45px;
+    align-items: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    margin-top: 45px;
+    width: 600px;
 
     & img {
-      width: 250px;
-      filter: grayscale(100%);
       border-radius: 50%;
+      filter: grayscale(100%);
+      width: 250px;
     }
   }
 
   &__card_name {
-    width: 250px;
-    margin-top: 45px;
-    display: flex;
-    justify-content: center;
     color: $altira-darkblue;
-    font-weight: 700;
+    display: flex;
     font-size: 1.2em;
+    font-weight: 700;
+    justify-content: center;
     line-height: 1.2em;
+    margin-top: 45px;
+    width: 250px;
   }
   & a {
-    text-decoration: none;
     color: $altira-color;
+    text-decoration: none;
   }
 
   & a:hover {
@@ -103,17 +96,17 @@
 //mobiles
 @media only screen and (max-width: 600px) {
   .about-container {
-    width: 70vw;
     margin: auto;
+    width: 70vw;
 
     &__title p {
       display: block;
       text-align: center;
     }
     &__cards-cont {
+      align-items: center;
       flex-direction: column;
       justify-content: center;
-      align-items: center;
     }
 
     &__card {
@@ -121,8 +114,8 @@
     }
 
     & img {
-      width: 14em;
       margin: 0;
+      width: 14em;
     }
   }
 }
@@ -130,12 +123,12 @@
 //large screens
 @media only screen and (min-width: 1392px) {
   .about-container {
-    width: 60vw;
     margin: auto;
+    width: 60vw;
 
     &__cards-cont {
-      width: 50vw;
       margin: auto;
+      width: 50vw;
     }
   }
 }

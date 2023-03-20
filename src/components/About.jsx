@@ -11,7 +11,7 @@ export default function About() {
     const observer = new IntersectionObserver((entries) => {
         
       const entry = entries[0]; //array of the elements being observed
-    //   console.log(entry)
+
         entries.forEach(entry => {
             if(entry.isIntersecting) {
                 document.querySelector('.about-image-jana').classList.add('about-image-animation');
@@ -33,7 +33,7 @@ export default function About() {
 
 
   return (
-    <div id="onas" className="container another">
+    <div id="onas" className="container">
         <div className="title-box">
             <h1>o nás</h1>
         </div>
