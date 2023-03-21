@@ -7,11 +7,8 @@ export default function Navbar() {
 
   const toggleHamburger = () => {
     let menu = document.querySelector(".mobile-navbar__list");
-    menu.classList.toggle("show");
-    
+    menu.classList.toggle("show"); 
   }
-
-
 
   return (
     <div className="navbar-container sticky">
@@ -44,11 +41,11 @@ export default function Navbar() {
 
             <div className="mobile-navbar__list">
               <ul>
-                <li> <Link onClick={toggleHamburger} activeClass="active" smooth spy to="sluzby-cont" >služby</Link></li>
+                <li><Link onClick={toggleHamburger} activeClass="active" smooth spy to="sluzby-cont" >služby</Link></li>
                 <li><Link onClick={toggleHamburger} activeClass="active" smooth spy to="zkus-cont" >naše zkušenosti</Link></li>
-                <li> <Link onClick={toggleHamburger} activeClass="active" smooth spy to="onas" >o nás</Link></li>
+                <li><Link onClick={toggleHamburger} activeClass="active" smooth spy to="onas" >o nás</Link></li>
                 <li><Link onClick={toggleHamburger} activeClass="active" smooth spy to="kontakt-cont" >kontakt</Link></li>
-                <li>    <Link onClick={toggleHamburger} activeClass="active" smooth spy to="refer-cont" >reference</Link> </li>
+                <li><Link onClick={toggleHamburger} activeClass="active" smooth spy to="refer-cont" >reference</Link> </li>
               </ul>
             </div> 
 

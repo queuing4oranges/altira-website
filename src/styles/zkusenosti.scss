@@ -7,16 +7,16 @@
   position: relative;
 
   &__item {
-    max-height: 70px;
-    max-width: 550px;
     align-items: center;
     display: flex;
+    max-height: 70px;
+    max-width: 550px;
     padding: 30px;
 
     &_text {
       color: $altira-color;
-      font-weight: 500;
       font-size: 1.2em;
+      font-weight: 500;
       margin-left: 30px;
       z-index: 5;
     }
