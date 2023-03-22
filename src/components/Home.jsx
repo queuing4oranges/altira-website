@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Hero from './Hero';
 import Navbar from './Navbar';
 import ImageSlider from './ImageSlider';
@@ -11,6 +11,7 @@ import Reference from './Reference';
 import Footer from './Footer';
 
 export default function Home() {
+
   return (
     <div >
       <Navbar/>

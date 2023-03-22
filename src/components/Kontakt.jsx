@@ -76,10 +76,10 @@ export default function Kontakt() {
                     </div>
                     <div className="kontakt__form_sender-input">
                         <label htmlFor="phone">Telefon</label>
-                        <input name="to_name" type="tel" id="phone" placeholder="777 888 999" required/>
+                        <input name="telephone" type="tel" id="phone" placeholder="777 888 999" required/>
                     </div>
                     <div className="kontakt__form_sender-input">
-                        <textarea name="report" id="" cols="30" rows="10" placeholder="Dobrý den, mám zájem o bližší informace..." required minLength={20}>
+                        <textarea name="message" id="" cols="30" rows="10" placeholder="Dobrý den, mám zájem o bližší informace..." required minLength={20}>
                         </textarea>
                     </div>   
                 </div>
