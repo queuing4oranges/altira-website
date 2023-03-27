@@ -89,6 +89,19 @@
         color: $altira-lightblue;
       }
     }
+
+    &-social {
+      & a {
+        margin-left: 0;
+        margin-right: 20px;
+        display: flex;
+        justify-content: center;
+        border: 3px solid transparent;
+        & svg:hover {
+          fill: $altira-lightblue;
+        }
+      }
+    }
   }
 
   &_map {
@@ -177,7 +190,7 @@
         font-size: 0.8em;
         font-style: oblique;
         opacity: 0.5;
-        padding: 15px;
+        padding: 5px;
       }
     }
   }

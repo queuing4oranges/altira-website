@@ -4,6 +4,9 @@ import Envelope from '../icons/Envelope'
 import Phone from '../icons/Phone'
 import swal from 'sweetalert';
 import GoogleMap from '../icons/GoogleMap';
+import Facebook from '../icons/Facebook';
+import Instagram from '../icons/Instagram';
+import Linkedin from '../icons/Linkedin';
 
 export default function Kontakt() {
     const form = useRef();
@@ -54,6 +57,13 @@ export default function Kontakt() {
                         <div>
                             <Phone width={24} height={24} color="#FAFCFF" />
                             <a href="tel:00420 605 700 815">+420 605 700 815</a>
+                        </div>
+                        <br />
+
+                        <div className="kontakt__address_details-social">
+                            <a href="https://www.facebook.com/Altira_logistics-121211334246543/" target="_blank"><Facebook color="#FAFCFF" height={24} width={24} /></a>
+                            <a href="https://www.instagram.com/altira_logistics/" target="_blank" rel="noreferrer"><Instagram color="#FAFCFF" height={25} width={25} stroke="#FAFCFF" strokeWidth={2}/></a>
+                            <a href="https://www.linkedin.com/company/altira-s-r-o/" target="_blank" rel="noreferrer"><Linkedin color="#FAFCFF" height={24} width={24} /></a>
                         </div>
                     </div>
                 </div>

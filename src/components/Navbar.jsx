@@ -1,7 +1,10 @@
 import React from "react";
 import { Link } from 'react-scroll';
 import AltiraLogo from "../icons/AltiraLogo";
+import Facebook from "../icons/Facebook";
 import Hamburger from "../icons/Hamburger";
+import Instagram from "../icons/Instagram";
+import Linkedin from "../icons/Linkedin";
 
 export default function Navbar() {
 
@@ -18,13 +21,24 @@ export default function Navbar() {
           <Link activeClass="none" smooth spy to="home-cont" ><AltiraLogo width={92} height={36} /></Link>
         </div>
 
+
+
         <div className="navbar__links">
           <Link onClick={toggleHamburger} activeClass="active" smooth spy to="sluzby-cont" >služby</Link>
           <Link onClick={toggleHamburger} activeClass="active" smooth spy to="zkus-cont" >naše zkušenosti</Link>
           <Link onClick={toggleHamburger} activeClass="active" smooth spy to="onas" >o nás</Link>
           <Link onClick={toggleHamburger} activeClass="active" smooth spy to="kontakt-cont" >kontakt</Link>
-          <Link onClick={toggleHamburger} activeClass="active" smooth spy to="refer-cont" >reference</Link>       
+          <Link onClick={toggleHamburger} activeClass="active" smooth spy to="refer-cont" >reference</Link>   
+
+          <div className="navbar__media">
+            <a href="https://www.facebook.com/Altira_logistics-121211334246543/"
+            target="_blank"><Facebook color="#11446e" height={20} width={20} /></a>
+            <a href="https://www.instagram.com/altira_logistics/" target="_blank" rel="noreferrer"><Instagram color="#11446e" height={25} width={25} stroke="#11446e" strokeWidth={2}/></a>
+            <a href="https://www.linkedin.com/company/altira-s-r-o/" target="_blank" rel="noreferrer"><Linkedin color="#11446e" height={20} width={20} /></a>
+          </div>    
         </div>
+
+
       </div>
 
       <div className="mobile-navbar">

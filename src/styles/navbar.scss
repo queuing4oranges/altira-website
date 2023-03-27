@@ -21,6 +21,23 @@
   &__logo {
     display: flex;
     width: 20%;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  &__media {
+    display: flex;
+    align-items: center;
+
+    & a {
+      margin-left: 0;
+      &:hover {
+        opacity: 0.5;
+        border-bottom: none !important;
+      }
+    }
   }
 
   &__links {
