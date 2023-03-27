@@ -129,6 +129,34 @@ export default function Sluzby() {
                 </div>
             </div>
         </section>  
+
+        <section className="sluzby-section"> 
+
+            <div 
+            data-aos="fade-right" 
+            data-aos-easing="linear"
+            data-aos-duration="500"
+            className="sluzby-section__text padding-right">
+                <div className="sluzby-section__text_title">
+                    <h2>Skladová logistika</h2>
+                </div>
+                
+                <ul className="sluzby-section__text_list">
+                    <li><CheckCircle width={20} height={20} color="#FA8900"/><p>audit logistiky</p></li>
+                    <li><CheckCircle width={20} height={20} color="#FA8900"/><p>návrh skladu</p></li>
+                    <li><CheckCircle width={20} height={20} color="#FA8900"/><p>layout</p></li>
+                    <li><CheckCircle width={20} height={20} color="#FA8900"/><p>řídící systém ve skladování</p></li>
+                </ul>
+                <div className="sluzby-section__text_description">
+                    <p>Zmapujeme současný stav vašich logistických procesů. Připravíme komplexní návrh uspořádání skladu. Naplánujeme optimální procesy včetně vhodných konkrétních technologií a manipulační techniky.</p>
+                </div>
+            </div>
+      
+            <div className="sluzby-section__image">
+                <img src={optimalizace} alt="two notebooks and people working" />
+            </div>
+        </section>
+
     </div>
   )
 }
