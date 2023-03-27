@@ -3,6 +3,7 @@ import chyb from "../images/chyb.png";
 import interim from "../images/interim.png";
 import optimalizace from "../images/optimalizace.png";
 import outsourcing from "../images/outsourcing.png";
+import sklad from "../images/sklad.png";
 import CheckCircle from '../icons/CheckCircle';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -153,7 +154,7 @@ export default function Sluzby() {
             </div>
       
             <div className="sluzby-section__image">
-                <img src={optimalizace} alt="two notebooks and people working" />
+                <img src={sklad} alt="warehouse" />
             </div>
         </section>
 
