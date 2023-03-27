@@ -38,7 +38,7 @@ export default function ImageSlider() {
           <div className="slider-card" >
             <h3 className="slider-card__title">férovost</h3>
             <Fairness color="#FA8900" height={70} width={70} />
-            <p className="slider-card__text">„k druhým se chováme tak, jak chceme, aby se oni chovali k nám“</p>
+            <p className="slider-card__text">„K druhým se chováme tak, jak chceme, aby se oni chovali k nám.“</p>
           </div>
 
 

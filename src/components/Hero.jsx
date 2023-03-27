@@ -11,8 +11,8 @@ export default function Hero() {
                  interim management
                 </p> 
                 <p className="hero-text__description">
-                    Jsme nadšenci, kteří se v logistice především v
-                    automobilovém průmyslu pohybují přes 20 let
+                    Jsme nadšenci, kteří se v logistice, především v
+                    automobilovém průmyslu pohybují přes 20 let.
                     Rádi své zkušenosti předáváme a uplatňujeme tam, kde
                     je potřeba.
                 </p>

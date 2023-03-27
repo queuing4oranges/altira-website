@@ -42,7 +42,7 @@ export default function Zkusenosti() {
                     <ArrowBull width={40} height={40} color="#fa8900" />
                 </div>
                 <div className="zkus-list__item_text">
-                    <p>přípravy procesů a dokumentce k certifikaci</p>
+                    <p>přípravy procesů a dokumentace k certifikaci</p>
                 </div>
             </div>
 

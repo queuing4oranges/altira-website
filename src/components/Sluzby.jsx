@@ -32,7 +32,7 @@ export default function Sluzby() {
                 </div>
                 
                 <ul className="sluzby-section__text_list">
-                    <li><CheckCircle width={20} height={20} color="#FA8900"/><p>zmapování log. procesů</p></li>
+                    <li><CheckCircle width={20} height={20} color="#FA8900"/><p>zmapování logistických procesů</p></li>
                     <li><CheckCircle width={20} height={20} color="#FA8900"/><p>definice případných nedostatků</p></li>
                     <li><CheckCircle width={20} height={20} color="#FA8900"/><p>návrh řešení včetně optimalizace</p></li>
                 </ul>
@@ -64,13 +64,13 @@ export default function Sluzby() {
                 </div>
                 
                 <ul className="sluzby-section__text_list">
-                    <li><CheckCircle width={20} height={20} color="#FA8900"/><p>zmapování log. procesů</p></li>
+                    <li><CheckCircle width={20} height={20} color="#FA8900"/><p>zmapování logistických procesů</p></li>
                     <li><CheckCircle width={20} height={20} color="#FA8900"/><p>definice nedostatků</p></li>
                     <li><CheckCircle width={20} height={20} color="#FA8900"/><p>nasazení krizového týmu</p></li>
                     <li><CheckCircle width={20} height={20} color="#FA8900"/> <p>definování týmů (vývojový diagram)</p></li>
                 </ul>
                 <div className="sluzby-section__text_description">
-                    <p>Vypracujeme analýzu celého logistického procesu napříč firmou, připravíme návrhy řešení zlepšení jednotlivých kroků procesu včetně optimalizace, nasadíme krizový tým, který bude součástí procesu na denní bázi a bude schopen řešit nedostatky okamžitě.</p>
+                    <p>Vypracujeme analýzu celého logistického procesu napříč firmou, připravíme návrhy řešení a zlepšení jednotlivých kroků procesu, včetně optimalizace, nasadíme krizový tým, který bude součástí procesu na denní bázi a bude schopen řešit nedostatky okamžitě.</p>
                 </div>
             </div>
         </section>
@@ -93,7 +93,7 @@ export default function Sluzby() {
                     <li><CheckCircle width={20} height={20} color="#FA8900"/><p>dispečer přeprav</p></li>
                 </ul>
                 <div className="sluzby-section__text_description">
-                    <p>Dodáme odborníka, na výše uvedené pozice. Stává se nejen plnohodnotným členem vašeho týmu, ale ihned pracuje na cílech, které jsou jasně stanovené (definované a odsouhlasené) daného interim projektu.</p>
+                    <p>Dodáme odborníka na výše uvedené pozice. Stává se nejen plnohodnotným členem vašeho týmu, ale ihned pracuje na cílech, které jsou jasně stanovené (definované a odsouhlasené) daného interim projektu.</p>
                 </div>
             </div>
       
@@ -125,7 +125,7 @@ export default function Sluzby() {
                     <li><CheckCircle width={20} height={20} color="#FA8900"/><p>zastřešení celého procesu svým personálem</p></li>
                 </ul>
                 <div className="sluzby-section__text_description">
-                    <p>Vypracujeme analýzu celého logistického procesu napříč firmou, připravíme návrhy řešení zlepšení jednotlivých kroků procesu včetně optimalizace, nasadíme krizový tým, který bude součástí procesu na denní bázi a bude schopen řešit nedostatky okamžitě.</p>
+                    <p>Porovnáme výhody a nevýhody jednotlivých řešení IN/OUT sorcingu a doporučíme vám to, které bude pro vaši firmu nejvýhodnější. Jsme schopni vést interní logistiky. Možná rizika převezmeme na nás.</p>
                 </div>
             </div>
         </section>  

@@ -43,10 +43,10 @@ export default function Ziskate() {
 
             <div className="zis-container__middle_description">
                 <div className="zis-container__middle_description-top">
-                    <p>To, co vás trápí dokážeme vyřešit k vaši spokojenosti. Ručíme za dlouhodobou udržitelnost a funkčnost, pokud definované nástroje budou používány.</p>
+                    <p>To, co vás trápí dokážeme vyřešit k vaši spokojenosti. Ručíme za dlouhodobou udržitelnost a funkčnost, pokud budou definované nástroje používány.</p>
                 </div>
                 <div className="zis-container__middle_description-bottom">
-                    <p>Pracujeme dle termínovaného plánu, který je oběma stranami na začátku každého projektu odsouhlasen. Ručíme za výsledky našeho celého týmu <br />
+                    <p>Pracujeme dle termínovaného plánu, který je oběma stranami na začátku každého projektu odsouhlasen. Ručíme za výsledky celého našeho týmu. <br />
                         ALTIRA</p>
                 </div>
             </div>
