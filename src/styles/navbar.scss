@@ -150,5 +150,11 @@
       background: $altira-lightblue;
       color: $altira-white;
     }
+    & .social-media {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-top: 20px;
+    }
   }
 }

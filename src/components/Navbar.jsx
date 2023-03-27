@@ -60,6 +60,11 @@ export default function Navbar() {
                 <li><Link onClick={toggleHamburger} activeClass="active" smooth spy to="onas" >o nás</Link></li>
                 <li><Link onClick={toggleHamburger} activeClass="active" smooth spy to="kontakt-cont" >kontakt</Link></li>
                 <li><Link onClick={toggleHamburger} activeClass="active" smooth spy to="refer-cont" >reference</Link> </li>
+                <li className="social-media">
+                  <a href="https://www.facebook.com/Altira_logistics-121211334246543/" target="_blank"><Facebook color="#5f6166" height={30} width={30} /></a>
+                  <a href="https://www.instagram.com/altira_logistics/" target="_blank" rel="noreferrer"><Instagram color="#5f6166" height={35} width={35} stroke="#5f6166" strokeWidth={2}/></a>
+                  <a href="https://www.linkedin.com/company/altira-s-r-o/" target="_blank" rel="noreferrer"><Linkedin color="#5f6166" height={30} width={30} /></a>
+                </li>
               </ul>
             </div> 
 
