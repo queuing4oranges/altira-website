@@ -26,3 +26,9 @@ http://www.altira.cz
 ## Screenshots
 
 <img src="https://github.com/queuing4oranges/altira-website/blob/main/screenshots/ScreensShAltira1.PNG">
+
+<img src="https://github.com/queuing4oranges/altira-website/blob/main/screenshots/ScreensShAltira2.PNG">
+
+<img src="https://github.com/queuing4oranges/altira-website/blob/main/screenshots/ScreensShAltira3.PNG">
+
+<img src="https://github.com/queuing4oranges/altira-website/blob/main/screenshots/ScreensShAltira4.PNG">
