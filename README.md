@@ -24,3 +24,5 @@ http://www.altira.cz
 `npm run dev`
 
 ## Screenshots
+
+<img src="https://github.com/queuing4oranges/altira-website/blob/main/screenshots/ScreensShAltira1.PNG">
