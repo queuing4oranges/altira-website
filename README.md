@@ -10,7 +10,7 @@ http://www.altira.cz
 
 ## Tech stack
 
-- Javscript (React / Vite)
+- JavaScript (React / Vite)
 - SASS
 - EmailJS
 - AOS
